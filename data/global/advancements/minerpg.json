@@ -1,0 +1,18 @@
+{
+    "display": {
+        "title": "mineRPG",
+        "description": "rpg system for minecraft",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:'weiiw'}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

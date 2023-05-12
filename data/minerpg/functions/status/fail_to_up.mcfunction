@@ -1,0 +1,1 @@
+tellraw @s {"text":"You don't have enough Point","color": "red"}
