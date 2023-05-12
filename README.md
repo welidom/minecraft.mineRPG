@@ -1,3 +1,3 @@
 # minecraft.mineRPG
 
-##RPG system for minecraft JAVA EDITION
+## RPG system for minecraft JAVA EDITION
