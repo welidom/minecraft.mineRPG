@@ -5,6 +5,7 @@ scoreboard objectives add cha dummy
 scoreboard objectives add con dummy
 scoreboard objectives add luk dummy
 scoreboard objectives add left_status dummy
+scoreboard objectives add forStatus trigger
 
 scoreboard objectives add max_mana dummy
 scoreboard objectives add cur_mana dummy

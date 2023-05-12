@@ -1,0 +1,1 @@
+{"minerpg":{"main":{"$func":["tick"]},"level":{"$func":["reset","tick"]},"status":{"$func":["reset","tick"]},"class":{"selection":{"1st":{"$func":["start"]}}}}}

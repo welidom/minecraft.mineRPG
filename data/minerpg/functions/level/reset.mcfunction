@@ -3,6 +3,7 @@ scoreboard objectives add max_xp dummy
 scoreboard objectives add cur_xp dummy
 scoreboard objectives add level dummy {"text":"Lv."}
 scoreboard objectives add xpStack dummy
+scoreboard objectives add forClass trigger
 
 scoreboard objectives setdisplay belowName level
 
