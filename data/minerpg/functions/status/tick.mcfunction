@@ -1,7 +1,7 @@
 # trigger enable
-execute as @a run scoreboard players enable @s forStatus
+scoreboard players enable @a forStatus
 # status change
-execute as @a[scores={forStatus=0}] at @s run function minerpg:status/reset
+execute as @a[scores={forStatus=-1}] at @s run function minerpg:status/reset
 execute as @a[scores={forStatus=1}] at @s run function minerpg:status/up/str
 execute as @a[scores={forStatus=2}] at @s run function minerpg:status/down/str
 execute as @a[scores={forStatus=3}] at @s run function minerpg:status/upt/str
@@ -26,7 +26,7 @@ execute as @a[scores={forStatus=21}] at @s run function minerpg:status/up/luk
 execute as @a[scores={forStatus=22}] at @s run function minerpg:status/down/luk
 execute as @a[scores={forStatus=23}] at @s run function minerpg:status/upt/luk
 execute as @a[scores={forStatus=24}] at @s run function minerpg:status/downt/luk
-execute as @a[scores={forStatus=0..}] at @s run scoreboard players reset @s forStatus
+execute as @a at @s unless entity @s[scores={forStatus=0}] run scoreboard players reset @s forStatus
 
 #damage check
 execute as @a if score @s health_check > @s health run function minerpg:status/luk/passive

@@ -1,2 +1,2 @@
 scoreboard players set @s class_selection 4
-tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyou know select ","color": "gray"},{"text": "No.4 Wizard","bold": true,"color": "red"},{"text":"\nDo you sure?\nClick ","color": "gray"},{"text":"Confirm","color": "red"},{"text": " to Get this Class","color": "gray"}]
+tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyou now select ","color": "gray"},{"text": "No.4 Wizard","bold": true,"color": "red"},{"text":"\nDo you sure?\nClick ","color": "gray"},{"text":"Confirm","color": "red"},{"text": " to Get this Class","color": "gray"}]
