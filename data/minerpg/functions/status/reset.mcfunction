@@ -9,6 +9,7 @@ scoreboard objectives add forStatus trigger
 
 scoreboard objectives add max_mana dummy
 scoreboard objectives add cur_mana dummy
+scoreboard objectives add pre_mana dummy
 
 scoreboard objectives add akk_str dummy
 scoreboard objectives add akk_int dummy
@@ -52,6 +53,7 @@ execute as @a unless score @s luk matches -2147483648..2147483647 run scoreboard
 execute as @a unless score @s left_status matches -2147483648..2147483647 run scoreboard players set @s left_status 0
 execute as @a unless score @s max_mana matches -2147483648..2147483647 run scoreboard players set @s max_mana 0
 execute as @a unless score @s cur_mana matches -2147483648..2147483647 run scoreboard players set @s cur_mana 0
+execute as @a unless score @s pre_mana matches -2147483648..2147483647 run scoreboard players set @s cur_mana 0
 
 schedule clear minerpg:status/mana_regeneration
 function minerpg:status/mana_regeneration

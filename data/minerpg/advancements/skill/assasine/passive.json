@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "tag": "minecraft:hoes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "minerpg:skill/assasine/passive"
+  },
+  "sends_telemetry_event": false
+}

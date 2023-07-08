@@ -1,12 +1,12 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick",
+        "trigger": "minecraft:player_hurt_entity",
         "conditions": {
           "player": {
             "equipment": {
               "mainhand": {
-                "tag": "minecraft:axes"
+                "tag": "minecraft:hoes"
               }
             }
           }
@@ -14,7 +14,7 @@
       }
     },
     "rewards": {
-      "function": "minecraft:aaa"
+      "function": "minerpg:skill/assasine/attack"
     },
     "sends_telemetry_event": false
   }

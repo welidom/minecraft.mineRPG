@@ -21,6 +21,10 @@ execute as @e store result score @s entity_health run data get entity @s Health
 
 execute as @a[scores={health_check=..0}] if score @s health_check < @s health run function minerpg:status/refresh
 execute as @e if score @s entity_health < @s health_check run function minerpg:status/cha/main
+execute as @e if score @s entity_health < @s health_check if entity @e[tag=assasine_attack] run scoreboard players add @s bleeding 40
+tag @e remove assasine_attack
+
+execute as @a[scores={health=..0}] run scoreboard players reset @s bleeding
 
 execute as @a store result score @s health_check run scoreboard players get @s health
 execute as @e store result score @s health_check run data get entity @s Health

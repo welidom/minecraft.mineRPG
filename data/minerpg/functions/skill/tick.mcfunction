@@ -10,3 +10,20 @@ execute as @e[tag=basicEnergyBullet, nbt={inGround:true}] run kill @s
 
 execute as @e[tag=ManaDisplay] run scoreboard players add @s server_tick 1
 execute as @e[tag=ManaDisplay, scores={server_tick=20..}] run kill @s
+
+#Warrior
+execute as @a run attribute @s generic.attack_damage modifier remove 7196ffcf-9882-4744-a44e-8139db788f2c
+
+#Assasine
+execute as @a run attribute @s generic.attack_damage modifier remove 91d30d45-8e26-4e8a-91bf-b9a66f565634
+
+#bleeding
+execute as @e[scores={bleeding=1..}] at @s run function minerpg:skill/bleeding
+
+#Archer
+execute as @a run attribute @s generic.attack_knockback modifier remove 612e622a-989c-46e9-8436-2a647ebe7d73
+
+#when mana changed
+execute as @a unless score @s cur_mana = @s pre_mana run title @s actionbar ["",{"score":{"name":"@s","objective":"cur_mana"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"max_mana"},"color":"blue"}]
+execute as @a unless score @s cur_mana = @s pre_mana run scoreboard players operation @s pre_mana = @s cur_mana
+

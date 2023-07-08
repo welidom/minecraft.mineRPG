@@ -1,5 +1,4 @@
 execute as @s run scoreboard players remove @s cur_mana 1
-title @s actionbar ["",{"score":{"name":"@s","objective":"cur_mana"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"max_mana"},"color":"blue"}]
 execute at @s run playsound entity.creeper.hurt master @a ~ ~ ~ 200 0 0.4
 execute at @s run playsound entity.allay.hurt master @a ~ ~ ~ 30 0.3 1
 execute as @s at @s positioned .0 0 .0 run summon area_effect_cloud ^ ^ ^2 {Tags:["aim"], Duration:1}

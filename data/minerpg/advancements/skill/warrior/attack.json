@@ -1,7 +1,7 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick",
+        "trigger": "minecraft:player_hurt_entity",
         "conditions": {
           "player": {
             "equipment": {
@@ -14,7 +14,7 @@
       }
     },
     "rewards": {
-      "function": "minecraft:aaa"
+      "function": "minerpg:skill/warrior/attack"
     },
     "sends_telemetry_event": false
   }
