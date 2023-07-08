@@ -17,6 +17,9 @@ triple damage when using bow(passive, cost 3 mana)
 ### No.4 Wizard
 get handicap without magic
 
+## status
+### STR INT DEX CHA CON LUK
+
 ## 직업
 ### No.1 전사
 도끼를 사용할때 추가 공격력을 얻는다(passive, cost 5 mana)
