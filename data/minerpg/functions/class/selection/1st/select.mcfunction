@@ -1,4 +1,5 @@
-execute as @s[tag=inSelection] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"you don't select class yet!","color": "red"}
+execute as @s[tag=inSelection, scores={language=0}] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"you don't select class yet!","color": "red"}
+execute as @s[tag=inSelection, scores={language=1}] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"아직 직업을 선택하지 않으셨습니다!","color": "red"}
 
 scoreboard players set @s class_cha 0
 scoreboard players set @s class_con 0

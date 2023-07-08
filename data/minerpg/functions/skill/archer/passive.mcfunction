@@ -1,3 +1,7 @@
-advancement revoke @s only minerpg:skill/archer/passive
+execute as @e[type=#arrows] at @s store result score @s UUID run data get entity @s Owner[0]
+execute as @a at @s store result score @s UUID run data get entity @s UUID[0]
 
-attribute @s[scores={class=3, cur_mana=3..}] minecraft:generic.attack_damage modifier add 612e622a-989c-46e9-8436-2a647ebe7d73 "minecraft:generic.attack_knockback" 2 add
+execute as @e[type=#arrows] if score @s UUID = @p[scores={class=3, cur_mana=3..}] UUID run tag @s add archer_pro
+execute as @e[tag=archer_pro, tag=!already] store result entity @s damage double 3 run data get entity @s damage
+execute as @e[tag=archer_pro, tag=!already] as @a[scores={class=3, cur_mana=3..}] run scoreboard players remove @s cur_mana 3
+execute as @e[tag=archer_pro, tag=!already] run tag @s add already

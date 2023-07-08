@@ -21,7 +21,7 @@ execute as @a run attribute @s generic.attack_damage modifier remove 91d30d45-8e
 execute as @e[scores={bleeding=1..}] at @s run function minerpg:skill/bleeding
 
 #Archer
-execute as @a run attribute @s generic.attack_knockback modifier remove 612e622a-989c-46e9-8436-2a647ebe7d73
+function minerpg:skill/archer/passive
 
 #when mana changed
 execute as @a unless score @s cur_mana = @s pre_mana run title @s actionbar ["",{"score":{"name":"@s","objective":"cur_mana"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"max_mana"},"color":"blue"}]
