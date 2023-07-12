@@ -1,1 +1,1 @@
-tag @e remove cha_slow_down
+tag @e remove mineRPG.cha_slow_down

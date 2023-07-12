@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirments":{
+            "trigger": "recipe_crafted"
+        }
+    },
+    "rewards": {
+        "function": "minerpg:crafting/empty_scroll"
+    }
+}

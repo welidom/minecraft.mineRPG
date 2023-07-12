@@ -1,5 +1,5 @@
-execute as @s[tag=inSelection, scores={language=0}] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"you don't select class yet!","color": "red"}
-execute as @s[tag=inSelection, scores={language=1}] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"아직 직업을 선택하지 않으셨습니다!","color": "red"}
+execute as @s[tag=mineRPG.inSelection, scores={language=0}] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"you don't select class yet!","color": "red"}
+execute as @s[tag=mineRPG.inSelection, scores={language=1}] unless entity @s[scores={class_selection=-2147483648..2147483647}] run tellraw @s {"text":"아직 직업을 선택하지 않으셨습니다!","color": "red"}
 
 scoreboard players set @s class_cha 0
 scoreboard players set @s class_con 0
@@ -22,5 +22,5 @@ playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1.0 1.8
 particle minecraft:firework ~ ~1 ~ 1 1 1 0.01 20 force
 
 scoreboard players reset @s class_selection
-clear @s written_book{Tags:["1sBook"]}
-tag @s remove inSelection
+clear @s written_book{Tags:["mineRPG.1sBook"]}
+tag @s remove mineRPG.inSelection
