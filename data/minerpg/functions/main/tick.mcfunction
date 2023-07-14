@@ -56,5 +56,5 @@ scoreboard players operation @s server_tick = #server server_tick
 scoreboard players add @e[type=text_display, tag=damage_display] server_tick 1
 execute as @e[scores={server_tick=10..}, tag=damage_display, type=text_display] run kill @s
 
-clear @a knowledge_book
-kill @e[type=item, nbt={Item:{id:"minecraft:knowledge_book"}}]
+# Crafting Custom Items
+execute as @e[nbt={Item:{id:"minecraft:paper"}}] at @s if entity @e[nbt={Item:{tag:{Tags:['mineRPG.manaPotion']}}}, distance=..1] run function minerpg:crafting/empty_scroll

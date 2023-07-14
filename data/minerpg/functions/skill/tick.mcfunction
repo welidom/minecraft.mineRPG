@@ -1,5 +1,5 @@
 # energy bullet
-execute as @a[scores={class=4}, nbt={SelectedItem:{tag:{Tags:["mineRPG.forWizard"]}}}] at @s unless entity @e[type=interaction, tag=MagicArea, distance=..2] run summon minecraft:interaction ~ ~1 ~ {Tags:["mineRPG.MagicArea"]}
+execute as @a[scores={class=4}, nbt={SelectedItem:{tag:{Tags:["mineRPG.forWizard"]}}}] at @s unless entity @e[type=interaction, tag=MagicArea, distance=..2] run summon minecraft:interaction ~ ~1 ~ {Tags:["MagicArea"]}
 execute as @e[tag=MagicArea] at @s unless entity @a[scores={class=4}, nbt={SelectedItem:{tag:{Tags:["mineRPG.forWizard"]}}},distance=..2] run kill @s
 execute as @a[scores={class=4}] unless entity @s[nbt={SelectedItem:{tag:{Tags:["mineRPG.forWizard"]}}}] anchored eyes run kill @e[type=interaction, tag=MagicArea, distance=..2, sort=nearest, limit=1]
 execute as @a[scores={class=4}, nbt={SelectedItem:{tag:{Tags:["mineRPG.forWizard"]}}}] at @s anchored eyes run tp @e[tag=MagicArea, distance=..2, limit=1,sort=nearest] ^ ^-0.35 ^0.3

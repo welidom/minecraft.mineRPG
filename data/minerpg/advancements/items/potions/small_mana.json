@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{Tags:['mineRPG','manaPotionS']}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "minerpg:items/potions/small_mana"
+  },
+  "sends_telemetry_event": false
+}
