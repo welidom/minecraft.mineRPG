@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "minerpg:main/tick"
+        "minerpg:main/tick",
+        "wkt:tick"
     ]
 }

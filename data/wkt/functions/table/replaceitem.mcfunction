@@ -1,0 +1,41 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+execute unless data block ~ ~ ~ Items[{Slot:0b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:0b}]
+execute unless data block ~ ~ ~ Items[{Slot:4b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:4b}]
+execute unless data block ~ ~ ~ Items[{Slot:5b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:5b}]
+execute unless data block ~ ~ ~ Items[{Slot:6b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:6b}]
+execute unless data block ~ ~ ~ Items[{Slot:7b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:7b}]
+execute unless data block ~ ~ ~ Items[{Slot:8b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:8b}]
+execute unless data block ~ ~ ~ Items[{Slot:9b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:9b}]
+execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:13b}]
+execute unless data block ~ ~ ~ Items[{Slot:14b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:14b}]
+execute unless data block ~ ~ ~ Items[{Slot:15b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:15b}]
+execute unless data block ~ ~ ~ Items[{Slot:17b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:17b}]
+execute unless data block ~ ~ ~ Items[{Slot:18b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:18b}]
+execute unless data block ~ ~ ~ Items[{Slot:22b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:22b}]
+execute unless data block ~ ~ ~ Items[{Slot:23b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:23b}]
+execute unless data block ~ ~ ~ Items[{Slot:24b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:24b}]
+execute unless data block ~ ~ ~ Items[{Slot:25b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:25b}]
+execute unless data block ~ ~ ~ Items[{Slot:26b}].tag.erase run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:26b}]
+execute as @s[tag=!section] unless score @s wkt.life matches ..3 unless score @s wkt.recipe matches 1.. unless data block ~ ~ ~ Items[{Slot:14b}] unless data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items[{Slot:2b}] unless data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:10b}] unless data block ~ ~ ~ Items[{Slot:11b}] unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:19b}] unless data block ~ ~ ~ Items[{Slot:20b}] unless data block ~ ~ ~ Items[{Slot:21b}] run scoreboard players set @s wkt.section 2
+execute as @s[tag=!section] unless score @s wkt.life matches ..3 unless score @s wkt.recipe matches 1.. unless data block ~ ~ ~ Items[{Slot:14b}] unless data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items[{Slot:2b}] unless data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:10b}] unless data block ~ ~ ~ Items[{Slot:11b}] unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:19b}] unless data block ~ ~ ~ Items[{Slot:20b}] unless data block ~ ~ ~ Items[{Slot:21b}] run tag @s add section
+execute if data block ~ ~ ~ Items[{Slot:16b}] unless data block ~ ~ ~ Items[{Slot:16b}].tag.craft run data modify storage item retrieve set from block ~ ~ ~ Items[{Slot:16b}]
+execute if data block ~ ~ ~ Items[{Slot:16b}] unless data block ~ ~ ~ Items[{Slot:16b}].tag.craft run item replace block ~ ~ ~ container.16 with air
+item replace block ~ ~ ~ container.0 with minecraft:black_stained_glass_pane{panel:1,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.4 with minecraft:black_stained_glass_pane{panel:2,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{panel:3,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.6 with minecraft:black_stained_glass_pane{panel:4,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.7 with minecraft:black_stained_glass_pane{panel:5,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.8 with minecraft:black_stained_glass_pane{panel:6,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.9 with minecraft:black_stained_glass_pane{panel:7,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.13 with minecraft:black_stained_glass_pane{panel:8,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.14 with minecraft:bookshelf{panel:9,erase:1,display:{Name:'[{"text":"\\u2716","bold":true,"italic":false,"color":"#E51F1F"},{"text":" re","bold":false,"color":"#F91215"},{"text":"ci","bold":false,"color":"#FF3639"},{"text":"pe","bold":false,"color":"#FF5658"},{"text":"s u","bold":false,"color":"#FF8082"},{"text":"na","bold":false,"color":"#FFADAE"},{"text":"va","bold":false,"color":"#FF8082"},{"text":"il","bold":false,"color":"#FF5658"},{"text":"ab","bold":false,"color":"#FF3639"},{"text":"le","bold":false,"color":"#F91215"}]'}}
+execute unless data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items[{Slot:2b}] unless data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:10b}] unless data block ~ ~ ~ Items[{Slot:11b}] unless data block ~ ~ ~ Items[{Slot:12b}] unless data block ~ ~ ~ Items[{Slot:19b}] unless data block ~ ~ ~ Items[{Slot:20b}] unless data block ~ ~ ~ Items[{Slot:21b}] run item replace block ~ ~ ~ container.14 with minecraft:bookshelf{panel:9,erase:1,display:{Name:'[{"text":"r","bold":true,"italic":false,"color":"gold"},{"text":"e","bold":true,"color":"#FFBB2B"},{"text":"c","bold":true,"color":"#FFDE55"},{"text":"i","bold":true,"color":"#FFF28D"},{"text":"p","bold":true,"color":"#FFDE55"},{"text":"e","bold":true,"color":"#FFBB2B"},{"text":"s","bold":true,"color":"gold"},{"text":" (","bold":true,"color":"dark_gray"},{"text":"click","bold":"false","color":"#6c6c6c"},{"text":")","bold":true,"color":"dark_gray"}]'}}
+item replace block ~ ~ ~ container.15 with minecraft:black_stained_glass_pane{panel:10,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.17 with minecraft:black_stained_glass_pane{panel:11,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.18 with minecraft:black_stained_glass_pane{panel:12,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.22 with minecraft:black_stained_glass_pane{panel:13,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{panel:14,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.24 with minecraft:black_stained_glass_pane{panel:15,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.25 with minecraft:black_stained_glass_pane{panel:16,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}
+item replace block ~ ~ ~ container.26 with minecraft:black_stained_glass_pane{panel:17,erase:1,display:{Name:'{"text":"*","color":"dark_gray","bold":"true","italic":"false"}'}}

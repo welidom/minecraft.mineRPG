@@ -6,3 +6,5 @@ scoreboard objectives add attacked minecraft.custom:damage_taken
 scoreboard objectives add bleeding dummy
 scoreboard objectives add bleeding_check dummy
 scoreboard objectives add bleeding_sec dummy
+
+scoreboard objectives add energy_bullet_cooldown dummy

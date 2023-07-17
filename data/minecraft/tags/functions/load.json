@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "minerpg:main/reset"
+        "minerpg:main/reset",
+        "wkt:load"
     ]
 }

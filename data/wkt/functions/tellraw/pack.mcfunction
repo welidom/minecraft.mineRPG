@@ -1,0 +1,3 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+tellraw @a ["",{"text":"                A","bold":true,"color":"green"},{"text":"n","bold":true,"color":"#9CFF69"},{"text":"i","bold":true,"color":"#CAFF77"},{"text":"m","bold":true,"color":"#E3FF72"},{"text":"al","bold":true,"color":"#ECFD72"},{"text":" H","bold":true,"color":"#E3FF72"},{"text":"e","bold":true,"color":"#CAFF77"},{"text":"r","bold":true,"color":"#9CFF69"},{"text":"d","bold":true,"color":"green"},{"text":" (","bold":true,"color":"dark_gray"},{"text":"By CubeDeveloper","color":"#6E6E6E"},{"text":")","bold":true,"color":"dark_gray"}]
