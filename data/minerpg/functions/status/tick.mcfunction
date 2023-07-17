@@ -1,7 +1,7 @@
 # trigger enable
 scoreboard players enable @a forStatus
 # status change
-execute as @a[scores={forStatus=-1}] at @s run function minerpg:status/reset
+execute as @a[scores={forStatus=-1}] at @s run function minerpg:status/reset_status
 execute as @a[scores={forStatus=1}] at @s run function minerpg:status/up/str
 execute as @a[scores={forStatus=2}] at @s run function minerpg:status/down/str
 execute as @a[scores={forStatus=3}] at @s run function minerpg:status/upt/str

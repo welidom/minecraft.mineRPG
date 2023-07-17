@@ -11,3 +11,5 @@ scoreboard players set @s dex 0
 scoreboard players set @s luk 0
 scoreboard players set @s int 0
 scoreboard players set @s str 0
+
+tag @s remove mineRPG.inSelection

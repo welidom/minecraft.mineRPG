@@ -16,4 +16,4 @@ scoreboard objectives add UUID dummy
 
 execute as @a store result score @s health_check run scoreboard players get @s health
 scoreboard objectives add get_book trigger
-tellraw @a {"text": "well come to mineRPG world!\n'/trigger get_book' to get rpg profile", "color": "green", "bold": true}
+tellraw @a {"text": "well come to mineRPG world!'", "color": "green", "bold": true}
